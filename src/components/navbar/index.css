@@ -1,0 +1,52 @@
+:root{
+    --navBackground: #000;
+    --navTextColor: #711A75;
+    --inputColor: #fff;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: var(--navBackground);
+}
+.project-name{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navTextColor);
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.input{
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    width: 240px;
+    background-color: var(--navTextColor);
+    color: var(--inputColor);
+}
+.input::placeholder{
+    color: var(--inputColor);
+}
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    border: none;
+    font-size: 20px;
+    color: var(--inputColor);
+    cursor: pointer;
+    width: 40px;
+    border-radius: 2px;
+    background-color: var(--navTextColor);
+}
