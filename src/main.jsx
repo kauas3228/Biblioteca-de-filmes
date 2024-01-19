@@ -1,24 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import './index.css'
+import "./index.css";
 
-import App from './App.jsx'
-import Movie from './pages/Movie.jsx'
-import Home from './pages/Home.jsx'
-import Search from './pages/Search.jsx'
+import App from "./App.jsx";
+import Movie from "./pages/Movie.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Search from "./pages/Search.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route element={<App />}>
-          <Route path='/' element={<Home />} />
-          <Route path='movie/:id' element={<Movie />} />
-          <Route path='search' element={<Search />} />
+          <Route path="/" element={<Home />} />
+          <Route path="movie/:id" element={<Movie />} />
+          <Route path="search" element={<Search />} />
         </Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

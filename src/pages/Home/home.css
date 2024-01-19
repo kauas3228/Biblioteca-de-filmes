@@ -1,0 +1,14 @@
+.container{
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+.films-container{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
