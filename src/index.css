@@ -1,3 +1,17 @@
+:root {
+  --navTextColor: #005B41;
+  --navBackground: #000;
+  --inputColor: #fff;
+  --textColor: #008170;
+  --bodyBackground: #232D3F;
+  --ratedColor: #F4CE14;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bodyBackground);
+}
+
 * {
   margin: 0;
   padding: 0;

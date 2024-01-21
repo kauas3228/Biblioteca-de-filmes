@@ -1,0 +1,36 @@
+.movie-page{
+    background-color: #000;
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 9px;
+    padding: 30px;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    flex-direction: column;
+}
+.info h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--ratedColor);
+}
+.info p{
+    color: white;
+}

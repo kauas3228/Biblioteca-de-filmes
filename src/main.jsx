@@ -5,9 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 
 import App from "./App.jsx";
-import Movie from "./pages/Movie.jsx";
+import Movie from "./pages/Movie/Movie.jsx";
 import Home from "./pages/Home/Home.jsx";
-import Search from "./pages/Search.jsx";
+import Search from "./pages/Search/Search.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

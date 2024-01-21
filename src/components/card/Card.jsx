@@ -8,15 +8,19 @@ import "./index.css";
 
 export default function Card({ film, showLink = true }) {
   return (
-      <div className="film-card">
-        <img src={imgURL + film.poster_path} />
-        <h2>{film.title}</h2>
+    <div className="film-card">
+      <img src={imgURL + film.poster_path} />
+      <h2>{film.title}</h2>
 
-        <p>
-          <FaStar /> {film.vote_average}
-        </p>
+      <p className="vote-average">
+        <FaStar /> {film.vote_average}
+      </p>
 
-        {showLink && <Link to={`/movie/${film.id}`}>Detalhes</Link>}
-      </div>
+      {showLink && (
+        <Link to={`/movie/${film.id}`} className="details">
+          Detalhes
+        </Link>
+      )}
+    </div>
   );
 }
