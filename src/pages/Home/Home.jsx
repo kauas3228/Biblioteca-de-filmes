@@ -27,7 +27,7 @@ export default function Home() {
       <h2 className="title">Filmes com melhor avaliação:</h2>
 
       <div className="films-container">
-        {topFilms.length === 0 && <p>Carregando...</p>}
+        {topFilms.length === 0 && <div class="custom-loader"></div>}
         {topFilms.length > 0 &&
           topFilms.map((film) => <Card film={film} key={film.id} />)}
       </div>

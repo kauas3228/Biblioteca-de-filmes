@@ -5,7 +5,6 @@ import {
   BsWallet2,
   BsHourglassSplit,
   BsFillFileEarmarkTextFill,
-  BsWallet,
   BsGraphUp,
 } from "react-icons/bs";
 
@@ -36,9 +35,9 @@ export default function Movie() {
   const formatCurrency = (number) => {
     return number.toLocaleString("en-US", {
       style: "currency",
-      currency: "USD"
-    })
-  }
+      currency: "USD",
+    });
+  };
   return (
     <div className="movie-page">
       {movie && (
@@ -47,37 +46,37 @@ export default function Movie() {
 
           <p className="tagline">{movie.tagline}</p>
           <div className="info-container">
-          <div className="info">
-            <h3>
-              <BsWallet2 />
-              Orçamento
-            </h3>
-            <p>{formatCurrency(movie.budget)}</p>
-          </div>
+            <div className="info">
+              <h3>
+                <BsWallet2 />
+                Orçamento
+              </h3>
+              <p>{formatCurrency(movie.budget)}</p>
+            </div>
 
-          <div className="info">
-            <h3>
-              <BsGraphUp />
-              Receita
-            </h3>
-            <p>{formatCurrency(movie.revenue)}</p>
-          </div>
+            <div className="info">
+              <h3>
+                <BsGraphUp />
+                Receita
+              </h3>
+              <p>{formatCurrency(movie.revenue)}</p>
+            </div>
 
-          <div className="info">
-            <h3>
-              <BsHourglassSplit />
-              Duração do filme
-            </h3>
-            <p>{movie.runtime} Minutos</p>
-          </div>
+            <div className="info">
+              <h3>
+                <BsHourglassSplit />
+                Duração do filme
+              </h3>
+              <p>{movie.runtime} Minutos</p>
+            </div>
 
-          <div className="info">
-            <h3>
-              <BsFillFileEarmarkTextFill />
-              Descrição
-            </h3>
-            <p>{movie.overview}</p>
-          </div>
+            <div className="info">
+              <h3>
+                <BsFillFileEarmarkTextFill />
+                Descrição
+              </h3>
+              <p>{movie.overview}</p>
+            </div>
           </div>
         </>
       )}
