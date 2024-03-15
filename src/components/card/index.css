@@ -1,17 +1,17 @@
 .film-card {
     gap: 10px;
-    width: 550px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
     border-radius: 10px;
-    background-color: #000;
+    background-color: black;
 }
 
 .film-card img {
-    width: 500px;
+    width: 350px;
 }
 
 h2 {
